@@ -20,6 +20,7 @@ type CToastProps = CTOptions & {
 	onHide: Function;
 	onClick: Function;
 	hideAfter: number;
+	hidePrevBeforeNextToast?: boolean;
 };
 
 const Toast: React.FC<CToastProps> = (props) => {
@@ -31,8 +32,9 @@ const Toast: React.FC<CToastProps> = (props) => {
 		props.onClick ? ' ct-cursor-pointer' : '',
 		`ct-toast-${props.type}`,
 	].join(' ');
-	const borderLeft = `${props.bar?.size || '3px'} ${props.bar?.style || 'solid'} ${props.bar
-		?.color || colors[props.type]}`;
+	const borderLeft = `${props.bar?.size || '3px'} ${props.bar?.style || 'solid'} ${
+		props.bar?.color || colors[props.type]
+	}`;
 
 	const CurrentIcon = Icons[props.type];
 

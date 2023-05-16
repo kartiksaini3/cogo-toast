@@ -41,11 +41,13 @@ const cogoToast: CToast = (text, options?) => {
 	return completePromise;
 };
 
-cogoToast.success = (t, o) => cogoToast(t, { ...o, type: 'success' });
-cogoToast.warn = (t, o) => cogoToast(t, { ...o, type: 'warn' });
-cogoToast.info = (t, o) => cogoToast(t, { ...o, type: 'info' });
-cogoToast.error = (t, o) => cogoToast(t, { ...o, type: 'error' });
-cogoToast.loading = (t, o) => cogoToast(t, { ...o, type: 'loading' });
+cogoToast.success = (t, o) =>
+	cogoToast(t, { ...o, type: 'success', hidePrevBeforeNextToast: true });
+cogoToast.warn = (t, o) => cogoToast(t, { ...o, type: 'warn', hidePrevBeforeNextToast: true });
+cogoToast.info = (t, o) => cogoToast(t, { ...o, type: 'info', hidePrevBeforeNextToast: true });
+cogoToast.error = (t, o) => cogoToast(t, { ...o, type: 'error', hidePrevBeforeNextToast: true });
+cogoToast.loading = (t, o) =>
+	cogoToast(t, { ...o, type: 'loading', hidePrevBeforeNextToast: true });
 
 export { Toast };
 

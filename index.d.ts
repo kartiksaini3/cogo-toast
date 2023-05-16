@@ -20,6 +20,7 @@ export type CTOptions = Partial<{
 	}>;
 	onClick: MouseEventHandler;
 	onHide: Function;
+	hidePrevBeforeNextToast?: boolean;
 }>;
 
 export type HideToastFunction = () => void;

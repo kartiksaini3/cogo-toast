@@ -26,6 +26,7 @@ type CToastItem = {
 type CToastContainerProps = Partial<{
 	toast: {
 		position?: string;
+		hidePrevBeforeNextToast: boolean;
 	};
 	hiddenID: number;
 }>;
@@ -37,7 +38,11 @@ const ToastContainer: React.FC<CToastContainerProps> = ({ toast, hiddenID }) => 
 		if (toast) {
 			setToasts((prevToasts) => {
 				const position = camelCase(toast.position || 'top-center');
-				return { ...prevToasts, [position]: [...prevToasts[position], toast] };
+
+				return {
+					...prevToasts,
+					[position]: !toast.hidePrevBeforeNextToast ? [...prevToasts[position], toast] : [toast],
+				};
 			});
 		}
 	}, [toast]);
@@ -53,7 +58,7 @@ const ToastContainer: React.FC<CToastContainerProps> = ({ toast, hiddenID }) => 
 			});
 			typeof callback === 'function' && callback(id, position);
 		};
-	}
+	};
 
 	const rows = ['top', 'bottom'];
 	const groups = ['Left', 'Center', 'Right'];
