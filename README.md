@@ -155,7 +155,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Keaws"><img src="https://avatars1.githubusercontent.com/u/5289466?v=4" width="100px;" alt=""/><br /><sub><b>Vitalii Kalchuk</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=Keaws" title="Code">💻</a></td>
     <td align="center"><a href="http://www.apathak.com"><img src="https://avatars1.githubusercontent.com/u/24917309?v=4" width="100px;" alt=""/><br /><sub><b>Amar Pathak</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=amarpathak" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/nataly87s"><img src="https://avatars2.githubusercontent.com/u/7895237?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Nataly Shrits</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=nataly87s" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/kartiksaini3"><img src="https://avatars2.githubusercontent.com/u/122782789" width="100px;" alt=""/><br /><sub><b>Kartik Saini</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=kartiksaini3" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/kartiksaini3"><img src="https://avatars.githubusercontent.com/u/122782789?v=4" width="100px;" alt=""/><br /><sub><b>Kartik Saini</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=kartiksaini3" title="Code">💻</a></td>
   </tr>
 </table>
 
