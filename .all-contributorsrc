@@ -46,7 +46,7 @@
       "profile": "http://www.apathak.com",
       "contributions": [
         "doc"
-       ]
+      ]
     },
     {
       "login": "nataly87s",
@@ -55,8 +55,17 @@
       "profile": "https://github.com/nataly87s",
       "contributions": [
         "code"
-       ]
+      ]
     },
+    {
+      "login": "kartiksaini3",
+      "name": "Kartik Saini",
+      "profile": "https://github.com/kartiksaini3",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    }
   ],
   "contributorsPerLine": 7
 }

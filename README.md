@@ -68,10 +68,10 @@ cogoToast.error('This is a error message');
 
 ```javascript
 cogoToast.info(
-  <div>
-    <b>Awesome!</b>
-    <div>Isn't it?</div>
-  </div>,
+	<div>
+		<b>Awesome!</b>
+		<div>Isn't it?</div>
+	</div>,
 );
 ```
 
@@ -83,7 +83,7 @@ This can be useful to do some action when the toast has completed showing.
 
 ```javascript
 cogoToast.loading('Loading your data...').then(() => {
-  cogoToast.success('Data Successfully Loaded');
+	cogoToast.success('Data Successfully Loaded');
 });
 ```
 
@@ -91,9 +91,9 @@ cogoToast.loading('Loading your data...').then(() => {
 
 ```javascript
 const { hide } = cogoToast.success('This is a success message.', {
-  onClick: () => {
-    hide();
-  },
+	onClick: () => {
+		hide();
+	},
 });
 ```
 
@@ -109,16 +109,16 @@ cogoToast.info('This is an info message', options);
 
 Here's a list of all the available options, to customize the toast to your needs.
 
-|    Options    |                                               Type                                               |                          Default                           |
-| :-----------: | :----------------------------------------------------------------------------------------------: | :--------------------------------------------------------: |
-|   hideAfter   |                                        Number in Seconds                                         | `3` <br />(Can be `0` to disable auto-hiding of the toast) |
-|   position    | `'top-left', 'top-center', 'top-right',` <br /> `'bottom-left', 'bottom-center', 'bottom-right'` |                       `'top-center'`                       |
-|    heading    |                                              String                                              |                            `''`                            |
-|  renderIcon   |                                       Function<ReactNode>                                        |                   Icon Based on the Type                   |
-|      bar      |           Object <br /> `{ size: '2px', style: 'solid/dashed/dotted', color: '#hex' }`           |                     Based on the Type                      |
-| onClick() |                                             Function                                             |                           `null`                           |
-| role |                                             aria-role                                             |                           `status`                           |
-| toastContainerID |                   The dom element in which the toast container is added                                         |                           `ct-container`                           |
+|     Options      |                                               Type                                               |                          Default                           |
+| :--------------: | :----------------------------------------------------------------------------------------------: | :--------------------------------------------------------: |
+|    hideAfter     |                                        Number in Seconds                                         | `3` <br />(Can be `0` to disable auto-hiding of the toast) |
+|     position     | `'top-left', 'top-center', 'top-right',` <br /> `'bottom-left', 'bottom-center', 'bottom-right'` |                       `'top-center'`                       |
+|     heading      |                                              String                                              |                            `''`                            |
+|    renderIcon    |                                       Function<ReactNode>                                        |                   Icon Based on the Type                   |
+|       bar        |           Object <br /> `{ size: '2px', style: 'solid/dashed/dotted', color: '#hex' }`           |                     Based on the Type                      |
+|    onClick()     |                                             Function                                             |                           `null`                           |
+|       role       |                                            aria-role                                             |                          `status`                          |
+| toastContainerID |                      The dom element in which the toast container is added                       |                       `ct-container`                       |
 
 ### Custom Styling
 
@@ -150,11 +150,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/anmdotdev"><img src="https://avatars2.githubusercontent.com/u/36692003?v=4" width="100px;" alt="Anmol Mahatpurkar"/><br /><sub><b>Anmol Mahatpurkar</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=anmolmahatpurkar" title="Code">💻</a> <a href="#design-anmolmahatpurkar" title="Design">🎨</a> <a href="https://github.com/Cogoport/cogo-toast/commits?author=anmolmahatpurkar" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://balazsorban.com"><img src="https://avatars1.githubusercontent.com/u/18369201?v=4" width="100px;" alt="Balázs Orbán"/><br /><sub><b>Balázs Orbán</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=balazsorban44" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Keaws"><img src="https://avatars1.githubusercontent.com/u/5289466?v=4" width="100px;" alt="Vitalii Kalchuk"/><br /><sub><b>Vitalii Kalchuk</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=Keaws" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.apathak.com"><img src="https://avatars1.githubusercontent.com/u/24917309?v=4" width="100px;" alt="Amar Pathak"/><br /><sub><b>Amar Pathak</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=amarpathak" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/nataly87s"><img src="https://avatars2.githubusercontent.com/u/7895237?s=460&v=4" width="100px;" alt="Nataly Shrits"/><br /><sub><b>Nataly Shrits</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=nataly87s" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/anmolmahatpurkar"><img src="https://avatars2.githubusercontent.com/u/36692003?v=4" width="100px;" alt=""/><br /><sub><b>Anmol Mahatpurkar</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=anmolmahatpurkar" title="Code">💻</a> <a href="#design-anmolmahatpurkar" title="Design">🎨</a> <a href="https://github.com/Cogoport/cogo-toast/commits?author=anmolmahatpurkar" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://balazsorban.com"><img src="https://avatars1.githubusercontent.com/u/18369201?v=4" width="100px;" alt=""/><br /><sub><b>Balázs Orbán</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=balazsorban44" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Keaws"><img src="https://avatars1.githubusercontent.com/u/5289466?v=4" width="100px;" alt=""/><br /><sub><b>Vitalii Kalchuk</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=Keaws" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.apathak.com"><img src="https://avatars1.githubusercontent.com/u/24917309?v=4" width="100px;" alt=""/><br /><sub><b>Amar Pathak</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=amarpathak" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/nataly87s"><img src="https://avatars2.githubusercontent.com/u/7895237?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Nataly Shrits</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=nataly87s" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/kartiksaini3"><img src="" width="100px;" alt=""/><br /><sub><b>Kartik Saini</b></sub></a><br /><a href="https://github.com/Cogoport/cogo-toast/commits?author=kartiksaini3" title="Code">💻</a> <a href="#ideas-kartiksaini3" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
