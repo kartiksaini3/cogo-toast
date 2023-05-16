@@ -1,5 +1,9 @@
 ### Features
 
+- 4.2.4
+
+  - Added: A new boolean prop "hidePrevBeforeNextToast" in options added which hides all the previous toasts before a new toast is shown.
+
 - 4.2.3
 
   - Fix: install error at 4.2.2. #53
